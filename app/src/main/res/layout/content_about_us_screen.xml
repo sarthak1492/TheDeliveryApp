@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AboutUsScreenActivity"
+    tools:showIn="@layout/activity_about_us_screen">
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblDeliverozSummary"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_marginTopPercent="10%"
+        android:textSize="@dimen/otpRadius"
+        android:textColor="#969696"
+        android:text="Started in 2018, Deliveroz is an online grocery shopping digital company which aims at delivery of daily healthy essentials."
+        android:layout_centerHorizontal="true"/>
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblDeliverozSummary2"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_marginTopPercent="10%"
+        android:textSize="@dimen/otpRadius"
+        android:layout_below="@+id/lblDeliverozSummary"
+        android:textColor="#969696"
+        android:text="Deliveroz offers you to subscription based delivery service for daily food essentials."
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutKeyPeople"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="40%"
+        android:background="#2e2745"
+        android:layout_alignParentBottom="true">
+
+        <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+            android:id="@+id/lblKeyPeopleInvolvedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/keyPeopleinvolvedTextSize"
+            android:textColor="#ffffff"
+            android:text="Key People Involved:"
+            app:layout_marginTopPercent="3%"
+            app:layout_marginLeftPercent="3%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/layout_people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lblKeyPeopleInvolvedText"
+            android:layout_centerHorizontal="true"
+            app:layout_marginTopPercent="5%">
+
+            <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+                android:id="@+id/lblPerson1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/personsTextSize"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:text="Sarthak Sharma\n(Co-founder) &amp; CEO"/>
+
+            <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+                android:id="@+id/lblPerson2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/personsTextSize"
+                app:layout_marginTopPercent="5%"
+                android:layout_below="@+id/lblPerson1"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:text="Harsh Mamoriya\n(Co-founder) &amp; CFO"/>
+
+            <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+                android:id="@+id/lblPerson3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/personsTextSize"
+                app:layout_marginTopPercent="5%"
+                android:layout_below="@+id/lblPerson2"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="Jitender Singh\n(Co-founder) &amp; COO"/>
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

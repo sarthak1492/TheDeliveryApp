@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="firstbreezeebizservice.deliveroz">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/deliveroz_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/deliveroz_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC7oYaFz1vv5-viGoo2Uii-pSzdLtyT7JY" />
+
+        <activity
+            android:name=".SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name=".NoConnectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubscriptionConfimationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginScreenActivity"
+            android:label="@string/title_activity_login_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OtpScreenActivity"
+            android:label="@string/title_activity_otp_screen"
+            android:parentActivityName=".LoginScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.LoginScreenActivity" />
+        </activity>
+        <activity
+            android:name=".HomeScreenActivity"
+            android:label="@string/title_activity_home_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileScreenActivity"
+            android:label="@string/title_activity_profile_screen"
+            android:parentActivityName=".HomeScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.HomeScreenActivity" />
+        </activity>
+        <activity
+            android:name=".EditProfileScreenActivity"
+            android:label="@string/title_activity_edit_profile_screen"
+            android:parentActivityName=".ProfileScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.ProfileScreenActivity" />
+        </activity>
+        <activity
+            android:name=".LocationScreenActivity"
+            android:label="@string/title_activity_location_screen"
+            android:parentActivityName=".EditProfileScreenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.EditProfileScreenActivity" />
+        </activity>
+        <activity
+            android:name=".AboutUsScreenActivity"
+            android:label="@string/title_activity_about_us_screen"
+            android:parentActivityName=".HomeScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.HomeScreenActivity" />
+        </activity>
+        <activity
+            android:name=".NewAddressScreenActivity"
+            android:label="@string/title_activity_new_address_screen"
+            android:parentActivityName=".LocationScreenActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="firstbreezeebizservice.deliveroz.LocationScreenActivity" />
+        </activity>
+        <activity android:name=".IntroSliderScreenActivity"></activity>
+    </application>
+
+</manifest>

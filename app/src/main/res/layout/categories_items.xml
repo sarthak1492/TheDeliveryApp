@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="@dimen/categoryContentSize"
+        android:layout_height="@dimen/categoryContentSize"
+        android:layout_centerInParent="true">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="@dimen/viewHeightWidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/black" />
+
+        <View
+            android:layout_width="@dimen/viewHeightWidth"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/black" />
+
+
+        <ImageView
+            android:id="@+id/imgCategoryImage"
+            android:layout_width="@dimen/imageHeightWidth"
+            android:layout_height="@dimen/imageHeightWidth"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblCategoryName"
+            android:layout_width="@dimen/textIWith"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgCategoryImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/GridtextMarginTop"
+            android:textAlignment="center"
+            android:textSize="@dimen/GridTextSize" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.LocationScreenActivity"
+    tools:showIn="@layout/activity_location_screen">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutCurrentLocation"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="10%"
+        android:clickable="true"
+        android:onClick="fncGetCurrentLocation"
+        android:focusable="true"
+        android:background="#ededed">
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detect My Location"
+            android:layout_centerVertical="true"
+            android:textColor="#2f2f2f"
+            android:textSize="@dimen/detectMyLocationTextSize"
+            app:layout_marginLeftPercent="5.3%" />
+
+        <ProgressBar
+            android:id="@+id/pbLocationFetch"
+            app:layout_heightPercent="50%"
+            app:layout_widthPercent="9%"
+            android:layout_alignParentRight="true"
+            app:layout_marginRightPercent="5.6%"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+        <ImageView
+            android:id="@+id/imgCurrentLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_action_location"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:layout_marginRightPercent="5.6%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.EditTextOpenSansRegular
+        android:id="@+id/txtNewLocation"
+        android:layout_width="match_parent"
+        android:hint="start typing a location.."
+        android:textSize="@dimen/newLocationTextSize"
+        android:background="@drawable/location_search_bg"
+        android:layout_below="@+id/layoutCurrentLocation"
+        android:drawableRight="@drawable/ic_magnifying_glass"
+        android:padding="@dimen/newLocationPadding"/>
+
+    <View android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000000"
+        android:layout_below="@+id/txtNewLocation"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="40%"/>
+
+    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        android:id="@+id/btnAddNewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="fncAddNewAddress"
+        app:layout_marginBottomPercent="3%"
+        android:text="add new address"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/refreshbtnTextSize"/>
+
+</android.support.percent.PercentRelativeLayout>

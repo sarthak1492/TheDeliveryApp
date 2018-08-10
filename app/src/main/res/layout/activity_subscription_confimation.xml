@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d3ea"
+    tools:context="firstbreezeebizservice.deliveroz.SubscriptionConfimationActivity">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutThankYouText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="15%"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/imgCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cirlce_shape_yellow"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblThankYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgCircle"
+            app:layout_marginLeftPercent="3%"
+            android:textSize="@dimen/thankYouTextSize"
+            android:textColor="@android:color/holo_green_dark"
+            android:fontFamily="@font/raleway_semibold"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        android:id="@+id/lblConfirmationSummary"
+        app:layout_widthPercent="80%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutThankYouText"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="10%"
+        android:textAlignment="center"
+        android:textSize="@dimen/confirmationSummaryTextSize"
+        android:textColor="@android:color/black"
+        />
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblWelcometoFamily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblConfirmationSummary"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcomeText"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/welcomeTextSize"
+        app:layout_marginTopPercent="10%" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="20%"
+        android:layout_alignParentBottom="true"
+        android:background="#2e2745">
+
+        <ImageView
+            android:id="@+id/imgDeliverozLogo"
+            app:layout_widthPercent="60%"
+            android:layout_height="match_parent"
+            android:src="@drawable/deliveroz_logo"
+            android:layout_centerInParent="true"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

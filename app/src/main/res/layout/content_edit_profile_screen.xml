@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.EditProfileScreenActivity"
+    tools:showIn="@layout/activity_edit_profile_screen">
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/editProfileTextSize"
+        android:text="Edit Profile"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginTopPercent="5%"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutAllFields"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:layout_below="@+id/lblEditProfile"
+        app:layout_marginTopPercent="5%">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansBold
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name*"
+                android:textSize="@dimen/welcomeTextSize"
+                android:inputType="textPersonName"
+                android:textColorHint="#6a6a6a"
+                android:textColor="@android:color/black"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputLayoutNameEditText">
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansBold
+                android:id="@+id/txtEmailID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email*"
+                android:textSize="@dimen/welcomeTextSize"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#6a6a6a"
+                android:textColor="@android:color/black"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputLayoutEmailEditText">
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansBold
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number*"
+                android:textSize="@dimen/welcomeTextSize"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#6a6a6a"
+                android:textColor="@android:color/black"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutCityEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputLayoutNumberEditText">
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansBold
+                android:id="@+id/txtLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location*"
+                android:textSize="@dimen/welcomeTextSize"
+                android:focusableInTouchMode="false"
+                android:editable="false"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#6a6a6a"
+                android:textColor="@android:color/black"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        android:id="@+id/btnGetOtp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_effect_button"
+        android:text="save changes"
+        android:onClick="fncSaveChanges"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/refreshbtnTextSize"
+        android:layout_alignParentBottom="true"
+        app:layout_marginBottomPercent="5%"
+        android:layout_width="wrap_content" />
+
+</android.support.percent.PercentRelativeLayout>

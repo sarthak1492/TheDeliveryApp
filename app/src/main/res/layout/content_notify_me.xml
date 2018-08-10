@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutMainNotify"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d3ea"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.NotifyMeActivity"
+    tools:showIn="@layout/activity_notify_me">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutNotifyHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="8%">
+
+        <ImageView
+            android:id="@+id/imgCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle_shape_red"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+            android:id="@+id/lblNotifyMe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notify_meText"
+            android:layout_toRightOf="@+id/imgCircle"
+            android:textColor="#302e35"
+            android:textSize="@dimen/notifyMeTextSize"
+            app:layout_marginLeftPercent="3%"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutCredentials"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="80%"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layoutNotifyHeading"
+        app:layout_marginTopPercent="10%">
+
+        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_marginTopPercent="3%"
+            android:textSize="@dimen/editTextSizeNotifyMe"
+            android:background="@drawable/bg_edittext_cylinder_shape"
+            android:hint="Name"
+            android:textColor="@android:color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#6b618a"
+            android:focusableInTouchMode="true"
+            android:inputType="textCapWords"
+            />
+
+        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            app:layout_marginTopPercent="5%"
+            android:textSize="@dimen/editTextSizeNotifyMe"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="#6b618a"
+            android:textColor="@android:color/black"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_edittext_cylinder_shape"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        android:id="@+id/btnSubmit"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/layoutCredentials"
+        android:layout_below="@+id/layoutCredentials"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/ripple_effect_button"
+        android:onClick="fncSendMail"
+        android:text="SUBMIT"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/refreshbtnTextSize"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="80%" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutTermsnConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="2%">
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblTermsnConditionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/notifySummaryTextSize"
+            android:textColor="#565656"
+            android:text="@string/termsNConditionsText"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblTermsnConditionsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/notifySummaryTextSize"
+            android:textColor="#ff3366"
+            android:text=" terms &amp; conditions"
+            android:layout_toRightOf="@+id/lblTermsnConditionsText"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblNotifySummary"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/notifySummary"
+        app:layout_marginBottomPercent="5%"
+        android:textColor="#565656"
+        android:textAlignment="center"
+        android:textSize="@dimen/notifySummaryTextSize"
+        app:layout_widthPercent="80%" />
+
+    <net.bohush.geometricprogressview.GeometricProgressView
+        android:id="@+id/progLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:gp_type="triangle"
+        app:gp_number_of_angles="7"
+        app:gp_color="@android:color/black"
+        app:gp_duration="800"
+        app:gp_figure_padding="3dp"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="6%"/>
+
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d3ea"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.ProfileScreenActivity"
+    tools:showIn="@layout/activity_profile_screen">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_Email"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%">
+
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_emailid"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblEmailID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/editButtonTextSize" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_Phone"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_Email"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%">
+
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_mobile"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblPhoneNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/editButtonTextSize" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_User"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_Phone"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%">
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_user"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/editButtonTextSize"
+            android:layout_alignParentEnd="true"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layout_City"
+        app:layout_widthPercent="90%"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_User"
+        app:layout_marginTopPercent="5%">
+
+        <ImageView
+            android:id="@+id/imgCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_action_city"/>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/editButtonTextSize"
+            android:layout_alignParentEnd="true"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <!--<android.support.percent.PercentRelativeLayout-->
+        <!--android:id="@+id/layout_Birthday"-->
+        <!--app:layout_widthPercent="90%"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/layout_City"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_marginTopPercent="5%">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/imgBirthday"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="@drawable/ic_action_cake"/>-->
+
+        <!--<firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold-->
+            <!--android:id="@+id/lblBirthDate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:text="Jan 17 1992"-->
+            <!--android:textSize="@dimen/editButtonTextSize"-->
+            <!--android:layout_alignParentEnd="true"/>-->
+
+    <!--</android.support.percent.PercentRelativeLayout>-->
+
+</android.support.percent.PercentRelativeLayout>

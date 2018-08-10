@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8e8e8"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.NewAddressScreenActivity"
+    tools:showIn="@layout/activity_new_address_screen">
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblHeading"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/detectMyLocationTextSize"
+        android:text="Enter a shipping address"
+        android:textColor="#1d1d1d"
+        app:layout_marginLeftPercent="10.1%"
+        app:layout_marginTopPercent="2.9%"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        app:layout_widthPercent="88.2%"
+        app:layout_heightPercent="62%"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_white_address"
+        android:layout_below="@+id/lblHeading"
+        app:layout_marginTopPercent="2.3%">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtFullName"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_centerHorizontal="true"
+                android:hint="Full Name"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtMobileNumber"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtFullName"
+                android:layout_centerHorizontal="true"
+                android:hint="Mobile Number"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtPincode"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtMobileNumber"
+                android:layout_centerHorizontal="true"
+                android:hint="Pincode"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtHouseNumber"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtPincode"
+                android:layout_centerHorizontal="true"
+                android:hint="Flat /House No./Floor/ Building"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtLocality"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtHouseNumber"
+                android:layout_centerHorizontal="true"
+                android:hint="Colony/Street/Locality"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtLandmark"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtLocality"
+                android:layout_centerHorizontal="true"
+                android:hint="Landmark"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtTownCity"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtLandmark"
+                android:layout_centerHorizontal="true"
+                android:hint="Town/City"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+                android:id="@+id/txtState"
+                app:layout_widthPercent="89.6%"
+                app:layout_heightPercent="12.3%"
+                android:layout_below="@+id/txtTownCity"
+                android:layout_centerHorizontal="true"
+                android:hint="State"
+                android:paddingBottom="@dimen/editTextxPadding"
+                android:textColorHint="#939393"
+                android:textSize="@dimen/editTextsSize" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    </TableLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_below="@+id/tableLayout"
+        app:layout_widthPercent="87.7%"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="5%"
+        android:background="@drawable/bg_spinner_new_address"
+        app:layout_heightPercent="7.7%">
+
+        <Spinner
+            android:id="@+id/spDeliveryType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            />
+
+    </android.support.percent.PercentRelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        app:layout_heightPercent="11%"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+            android:id="@+id/btnAddNewAddress"
+            app:layout_widthPercent="76.9%"
+            app:layout_heightPercent="59.3%"
+            android:background="@drawable/ripple_effect_button"
+            android:layout_centerInParent="true"
+            app:layout_marginBottomPercent="3%"
+            android:onClick="fncSaveNewAddress"
+            android:text="continue"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/refreshbtnTextSize"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

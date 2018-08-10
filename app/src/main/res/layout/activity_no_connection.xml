@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2e2745"
+    tools:context=".NoConnectionActivity">
+
+    <ImageView
+        android:id="@+id/noConnectionIcon"
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="10%"
+        android:background="@drawable/ic_noconnection_icon"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="20%"/>
+
+    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        android:id="@+id/lblNoConnectionHeading"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noConnectionIcon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:text="@string/noConnectionHeading"
+        android:textAlignment="center"
+        android:textSize="@dimen/noConnectionHeadingTextSize"
+        app:layout_marginTopPercent="5%"
+        app:layout_widthPercent="75%" />
+
+    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        android:id="@+id/lblNoNetworkMessage"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblNoConnectionHeading"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="@string/noConnectionMessage"
+        android:textAlignment="center"
+        android:textColor="#c0c0c0"
+        android:textSize="@dimen/noConnectionMessageTextSize"
+        app:layout_marginTopPercent="15%"
+        app:layout_widthPercent="80%" />
+
+    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        android:id="@+id/btnRefreshConnection"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect_button"
+        android:text="REFRESH"
+        android:textSize="@dimen/refreshbtnTextSize"
+        android:onClick="fncRefreshNetwork"
+        android:textColor="@android:color/white"
+        app:layout_marginBottomPercent="10%"
+        app:layout_widthPercent="40%" />
+
+</android.support.percent.PercentRelativeLayout>

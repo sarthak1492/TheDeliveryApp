@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Splash Screen Activity -->
+    <dimen name="appNameTextSize">60sp</dimen>
+
+
+    <!-- NoConnection Screen Activity  -->
+    <dimen name="noConnectionHeadingTextSize">40sp</dimen>
+    <dimen name="noConnectionMessageTextSize">35sp</dimen>
+    <dimen name="refreshbtnTextSize">30sp</dimen>
+
+    <!-- Coming Soon Screen Activity-->
+    <dimen name="comingSoonTextSize">60sp</dimen>
+
+    <!-- Login Screen Acitivity -->
+    <dimen name="LoginTextSize">37.8sp</dimen>
+    <dimen name="indiaFlagPaddingLeft">40dp</dimen>
+    <dimen name="indiaFlagDrawablePaddingLeft">100dp</dimen>
+    <dimen name="drawablePaddingStart">120dp</dimen>
+    <dimen name="nameEditTextPadding">30dp</dimen>
+
+    <!-- OtpVerification Screen Activity -->
+    <dimen name="otpRadius">32dp</dimen>
+
+    <!-- Profile Screen Activity -->
+    <dimen name="editButtonPaddingRight">40dp</dimen>
+    <dimen name="editButtonTextSize">26sp</dimen>
+    <dimen name="goodMorningTextSize">50sp</dimen>
+    <dimen name="nameTextSize">33.2sp</dimen>
+
+    <!-- HomeScreen Activity -->
+    <dimen name="categoryGridSize">450dp</dimen>
+    <dimen name="viewHeightWidth">2dp</dimen>
+    <dimen name="imageHeightWidth">120dp</dimen>
+    <dimen name="textIWith">200dp</dimen>
+    <dimen name="GridTextSize">28.8sp</dimen>
+    <dimen name="GridtextMarginTop">32dp</dimen>
+    <dimen name="categoryContentSize">600dp</dimen>
+
+    <!-- Edit Progile Screen Activity -->
+    <dimen name="editProfileTextSize">37sp</dimen>
+
+    <!-- Location Screen Activity -->
+    <dimen name="applyNowTextSize">32.6sp</dimen>
+    <dimen name="applyButtonMarginTextSize">36dp</dimen>
+    <dimen name="selectLocationTextSize">37.8sp</dimen>
+    <dimen name="applyButtonHeight">60dp</dimen>
+    <dimen name="applyButtonWidth">172dp</dimen>
+    <dimen name="detectMyLocationTextSize">34.6sp</dimen>
+    <dimen name="newLocationTextSize">36.6sp</dimen>
+    <dimen name="newLocationPadding">20dp</dimen>
+
+    <!-- New Address Screen Activity -->
+    <dimen name="editTextsSize">24sp</dimen>
+    <dimen name="editTextxPadding">24dp</dimen>
+
+    <!-- Notify Me Screen Activity -->
+    <dimen name="appNameSize">35sp</dimen>
+    <dimen name="notifyMeTextSize">45sp</dimen>
+    <dimen name="editTextPaddingNotifyMe">20dp</dimen>
+    <dimen name="editTextSizeNotifyMe">30sp</dimen>
+    <dimen name="notifySummaryTextSize">24sp</dimen>
+
+    <!-- Subscription Conformation Screen Activity -->
+    <dimen name="thankYouTextSize">80sp</dimen>
+    <dimen name="confirmationSummaryTextSize">35sp</dimen>
+    <dimen name="welcomeTextSize">32sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">32dp</dimen>
+    <dimen name="activity_vertical_margin">132dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">352dp</dimen>
+
+</resources>

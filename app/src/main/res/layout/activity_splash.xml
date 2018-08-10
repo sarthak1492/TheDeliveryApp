@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="firstbreezeebizservice.deliveroz.SplashScreenActivity">
+
+    <ImageView
+        android:id="@+id/imgDeliverozLogo"
+        app:layout_widthPercent="80%"
+        app:layout_heightPercent="20%"
+        android:src="@drawable/deliveroz_logo"
+        android:layout_centerInParent="true"/>
+
+    <!--<net.bohush.geometricprogressview.GeometricProgressView-->
+        <!--android:id="@+id/progLoading"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:gp_type="triangle"-->
+        <!--app:gp_number_of_angles="7"-->
+        <!--app:gp_color="@android:color/black"-->
+        <!--app:gp_duration="800"-->
+        <!--app:gp_figure_padding="3dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:layout_marginBottomPercent="10%"/>-->
+
+</android.support.percent.PercentRelativeLayout>

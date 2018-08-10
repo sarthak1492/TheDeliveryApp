@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d3ea"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="firstbreezeebizservice.deliveroz.LoginScreenActivity"
+    tools:showIn="@layout/activity_login_screen">
+
+    <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+        android:id="@+id/txtUserName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="10%"
+        android:hint="Enter name"
+        android:textSize="@dimen/welcomeTextSize"
+        android:inputType="textCapWords"
+        android:textColorHint="#6b618a"
+        android:paddingStart="@dimen/indiaFlagPaddingLeft"
+        android:paddingEnd="@dimen/indiaFlagPaddingLeft"
+        android:background="@drawable/bg_edittext_cylinder_shape"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutMobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_marginTopPercent="3%"
+        android:layout_below="@+id/txtUserName"
+        android:layout_centerHorizontal="true">
+
+        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            android:id="@+id/txtMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:textColorHint="#6b618a"
+            android:inputType="phone"
+            android:background="@drawable/bg_edittext_cylinder_shape"
+            android:maxLength="10"
+            android:drawablePadding="@dimen/indiaFlagDrawablePaddingLeft"
+            android:paddingStart="@dimen/indiaFlagPaddingLeft"
+            android:paddingEnd="@dimen/indiaFlagPaddingLeft"
+            android:textSize="@dimen/welcomeTextSize"
+            android:drawableLeft="@drawable/ic_india_flag">
+        </firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold>
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/prefix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/drawablePaddingStart"
+            android:textSize="@dimen/welcomeTextSize"
+            android:text="+91" />
+    </android.support.percent.PercentRelativeLayout>
+
+    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        android:id="@+id/btnGetOtp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/layoutCredentials"
+        android:layout_below="@+id/layoutMobileNo"
+        android:layout_marginTop="51dp"
+        android:background="@drawable/ripple_effect_button"
+        android:text="GET OTP"
+        android:onClick="fncSendOtp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/refreshbtnTextSize"
+        app:layout_marginTopPercent="5%"
+        android:layout_width="wrap_content" />
+
+    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        android:id="@+id/lblOtpSummary"
+        app:layout_widthPercent="70%"
+        android:layout_height="wrap_content"
+        android:text="@string/otpTextSummary"
+        android:textAlignment="center"
+        android:textColor="#565656"
+        android:textSize="@dimen/notifySummaryTextSize"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnGetOtp"
+        app:layout_marginTopPercent="3%"/>
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutTermsnConditionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_marginBottomPercent="3%">
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblTermsnConditionsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/termsNConditionsText"
+            android:textColor="#565656"
+            android:textSize="@dimen/notifySummaryTextSize" />
+
+        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            android:id="@+id/lblTermsnConditionsText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/notifySummaryTextSize"
+            android:textColor="#ff3366"
+            android:text=" terms &amp; conditions"
+            android:layout_toRightOf="@+id/lblTermsnConditionsText"/>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>

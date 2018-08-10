@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="firstbreezeebizservice.deliveroz.IntroSliderScreenActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        app:layout_heightPercent="10%"
+        app:layout_marginLeftPercent="5%"
+        app:layout_marginRightPercent="5%"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewHeightWidth"
+            android:layout_alignParentTop="true"
+            android:alpha=".5"
+            android:background="@android:color/white" />
+
+        <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:text="NEXT"
+            app:layout_marginBottomPercent="2%"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcomeTextSize" />
+
+        <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+            android:id="@+id/btn_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@null"
+            android:layout_centerVertical="true"
+            android:text="SKIP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcomeTextSize" />
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.percent.PercentRelativeLayout>
