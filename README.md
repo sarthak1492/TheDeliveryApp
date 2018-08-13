@@ -1,5 +1,5 @@
 # TheDeliveryApp
-This is application provides daily nutrition need at your doorstep.
+This is application provides daily nutrition needs at your doorstep.
 
 # Android Version
 4.4 and higher
