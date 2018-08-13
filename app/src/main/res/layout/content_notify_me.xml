@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#d7d3ea"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="firstbreezeebizservice.deliveroz.NotifyMeActivity"
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.NotifyMeActivity"
     tools:showIn="@layout/activity_notify_me">
 
     <android.support.percent.PercentRelativeLayout
@@ -24,7 +24,7 @@
             android:layout_centerVertical="true"
             android:background="@drawable/circle_shape_red"/>
 
-        <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
             android:id="@+id/lblNotifyMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
         android:layout_below="@+id/layoutNotifyHeading"
         app:layout_marginTopPercent="10%">
 
-        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+        <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
             android:id="@+id/txtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:inputType="textCapWords"
             />
 
-        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+        <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
             android:id="@+id/txtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,7 +79,7 @@
 
     </android.support.percent.PercentRelativeLayout>
 
-    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+    <sarthaksharma.theDeliveryApp.ButtonMontserratSemiBold
         android:id="@+id/btnSubmit"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/layoutCredentials"
@@ -101,7 +101,7 @@
         android:layout_centerHorizontal="true"
         app:layout_marginTopPercent="2%">
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblTermsnConditionsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
             android:textColor="#565656"
             android:text="@string/termsNConditionsText"/>
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblTermsnConditionsText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
 
     </android.support.percent.PercentRelativeLayout>
 
-    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+    <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
         android:id="@+id/lblNotifySummary"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

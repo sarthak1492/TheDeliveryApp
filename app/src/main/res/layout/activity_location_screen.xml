@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="firstbreezeebizservice.deliveroz.LocationScreenActivity">
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.LocationScreenActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:background="#2e2745"
             app:popupTheme="@style/AppTheme.PopupOverlay" >
 
-            <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+            <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
                 android:id="@+id/lblSelectLocation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/selectLocationTextSize"/>
 
-            <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+            <sarthaksharma.theDeliveryApp.ButtonMontserratSemiBold
                 android:id="@+id/btnApplyLocation"
                 android:layout_width="@dimen/applyButtonWidth"
                 android:layout_height="@dimen/applyButtonHeight"

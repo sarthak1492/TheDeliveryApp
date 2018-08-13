@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblGreetings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
             android:textColor="@android:color/white"
             android:layout_centerHorizontal="true"/>
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

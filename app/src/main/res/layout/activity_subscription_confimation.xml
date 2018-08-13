@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#d7d3ea"
-    tools:context="firstbreezeebizservice.deliveroz.SubscriptionConfimationActivity">
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.SubscriptionConfimationActivity">
 
     <android.support.percent.PercentRelativeLayout
         android:id="@+id/layoutThankYouText"
@@ -22,7 +22,7 @@
             android:layout_centerVertical="true"
             android:background="@drawable/cirlce_shape_yellow"/>
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblThankYou"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
 
     </android.support.percent.PercentRelativeLayout>
 
-    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+    <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
         android:id="@+id/lblConfirmationSummary"
         app:layout_widthPercent="80%"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         android:textColor="@android:color/black"
         />
 
-    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+    <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
         android:id="@+id/lblWelcometoFamily"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

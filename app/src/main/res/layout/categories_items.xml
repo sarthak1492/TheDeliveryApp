@@ -42,7 +42,7 @@
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true" />
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblCategoryName"
             android:layout_width="@dimen/textIWith"
             android:layout_height="wrap_content"

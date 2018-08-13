@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="#e8e8e8"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="firstbreezeebizservice.deliveroz.NewAddressScreenActivity"
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.NewAddressScreenActivity"
     tools:showIn="@layout/activity_new_address_screen">
 
-    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+    <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
         android:id="@+id/lblHeading"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtFullName"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -42,7 +42,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtMobileNumber"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -53,7 +53,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtPincode"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -64,7 +64,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtHouseNumber"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -75,7 +75,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtLocality"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -86,7 +86,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtLandmark"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -97,7 +97,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtTownCity"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -108,7 +108,7 @@
                 android:textColorHint="#939393"
                 android:textSize="@dimen/editTextsSize" />
 
-            <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+            <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
                 android:id="@+id/txtState"
                 app:layout_widthPercent="89.6%"
                 app:layout_heightPercent="12.3%"
@@ -146,7 +146,7 @@
         android:layout_alignParentBottom="true"
         android:background="#ffffff">
 
-        <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+        <sarthaksharma.theDeliveryApp.ButtonMontserratSemiBold
             android:id="@+id/btnAddNewAddress"
             app:layout_widthPercent="76.9%"
             app:layout_heightPercent="59.3%"

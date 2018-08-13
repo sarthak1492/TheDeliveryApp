@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
-        <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -19,7 +19,7 @@
             android:textSize="@dimen/appNameTextSize"
             android:textStyle="bold" />
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Book movie tickets for your family and friends!"

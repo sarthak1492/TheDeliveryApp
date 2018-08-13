@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Deliveroz</string>
+    <string name="app_name">The Delivery App</string>
     <string name="connectionErrorString">Connection Problem!</string>
     <string name="connectionErrorMessage">Check your internet connection before proceeding.</string>
     <string name="noConnectionHeading">You are currently not connected to a network</string>

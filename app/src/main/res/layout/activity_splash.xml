@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/side_nav_bar"
-    tools:context="firstbreezeebizservice.deliveroz.SplashScreenActivity">
+    tools:context="sarthaksharma.theDeliveryApp.SplashScreenActivity">
 
-    <ImageView
-        android:id="@+id/imgDeliverozLogo"
-        app:layout_widthPercent="80%"
-        app:layout_heightPercent="20%"
-        android:src="@drawable/deliveroz_logo"
+    <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
+        android:id="@+id/lblLogoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Delivery App"
+        android:textColor="@android:color/white"
+        android:textSize="35sp"
         android:layout_centerInParent="true"/>
 
     <!--<net.bohush.geometricprogressview.GeometricProgressView-->

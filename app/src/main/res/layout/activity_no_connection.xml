@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#2e2745"
-    tools:context=".NoConnectionActivity">
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.theDeliveryApp.NoConnectionActivity">
 
     <ImageView
         android:id="@+id/noConnectionIcon"
@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         app:layout_marginTopPercent="20%"/>
 
-    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+    <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
         android:id="@+id/lblNoConnectionHeading"
         android:layout_height="wrap_content"
         android:layout_below="@+id/noConnectionIcon"
@@ -27,7 +27,7 @@
         app:layout_marginTopPercent="5%"
         app:layout_widthPercent="75%" />
 
-    <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+    <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
         android:id="@+id/lblNoNetworkMessage"
         android:layout_height="wrap_content"
         android:layout_below="@+id/lblNoConnectionHeading"
@@ -40,7 +40,7 @@
         app:layout_marginTopPercent="15%"
         app:layout_widthPercent="80%" />
 
-    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+    <sarthaksharma.theDeliveryApp.ButtonMontserratSemiBold
         android:id="@+id/btnRefreshConnection"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

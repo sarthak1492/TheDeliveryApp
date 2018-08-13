@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="firstbreezeebizservice.deliveroz.ProfileScreenActivity">
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.ProfileScreenActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                     android:layout_centerVertical="true"
                     android:background="@drawable/cirlce_shape_yellow2" />
 
-                <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+                <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
                     android:id="@+id/lblLoginHeading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
 
             </android.support.percent.PercentRelativeLayout>
 
-            <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+            <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
                 android:id="@+id/lblEdit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

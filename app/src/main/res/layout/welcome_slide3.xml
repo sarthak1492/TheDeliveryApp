@@ -11,7 +11,7 @@
         android:layout_centerInParent="true"
         android:gravity="center">
 
-        <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+        <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Great Discounts"
@@ -20,7 +20,7 @@
             android:textSize="@dimen/appNameTextSize"
             android:textStyle="bold" />
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_marginTopPercent="15%"

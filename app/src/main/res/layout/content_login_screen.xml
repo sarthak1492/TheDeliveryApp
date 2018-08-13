@@ -6,10 +6,10 @@
     android:layout_height="match_parent"
     android:background="#d7d3ea"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="firstbreezeebizservice.deliveroz.LoginScreenActivity"
+    tools:context="sarthaksharma.theDeliveryApp.sarthaksharma.deliveroz.LoginScreenActivity"
     tools:showIn="@layout/activity_login_screen">
 
-    <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+    <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
         android:id="@+id/txtUserName"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -32,7 +32,7 @@
         android:layout_below="@+id/txtUserName"
         android:layout_centerHorizontal="true">
 
-        <firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold
+        <sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold
             android:id="@+id/txtMobileNo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,9 +47,9 @@
             android:paddingEnd="@dimen/indiaFlagPaddingLeft"
             android:textSize="@dimen/welcomeTextSize"
             android:drawableLeft="@drawable/ic_india_flag">
-        </firstbreezeebizservice.deliveroz.EditTextOpenSansSemiBold>
+        </sarthaksharma.theDeliveryApp.EditTextOpenSansSemiBold>
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/prefix"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:text="+91" />
     </android.support.percent.PercentRelativeLayout>
 
-    <firstbreezeebizservice.deliveroz.ButtonMontserratSemiBold
+    <sarthaksharma.theDeliveryApp.ButtonMontserratSemiBold
         android:id="@+id/btnGetOtp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/layoutCredentials"
@@ -74,7 +74,7 @@
         app:layout_marginTopPercent="5%"
         android:layout_width="wrap_content" />
 
-    <firstbreezeebizservice.deliveroz.TextViewMontserratRegular
+    <sarthaksharma.theDeliveryApp.TextViewMontserratRegular
         android:id="@+id/lblOtpSummary"
         app:layout_widthPercent="70%"
         android:layout_height="wrap_content"
@@ -94,7 +94,7 @@
         android:layout_centerHorizontal="true"
         app:layout_marginBottomPercent="3%">
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblTermsnConditionsText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             android:textColor="#565656"
             android:textSize="@dimen/notifySummaryTextSize" />
 
-        <firstbreezeebizservice.deliveroz.TextViewOpenSansSemibold
+        <sarthaksharma.theDeliveryApp.TextViewOpenSansSemibold
             android:id="@+id/lblTermsnConditionsText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
